@@ -15,10 +15,12 @@
       return "invalid input";
     }
   }
-
+  console.log("SOAL NOMOR 1");
   console.log(checkOddEven(5)); // ganjil
   console.log(checkOddEven(2)); // genap
   console.log(checkOddEven("enam")); // invalid input
+  console.log("    ");
+
 
 /**
  * Menentukan usia dewasa
@@ -37,11 +39,12 @@
       return "invalid input";
     }
   } 
-
+  console.log("SOAL NOMOR 2");
   console.log(checkMature(18)); // Dewasa
   console.log(checkMature(17)); // Belum dewasa
   console.log(checkMature("enam")); // invalid input
   console.log(checkMature(-1)); // invalid input
+  console.log("    ");
 
 /**
  * Menentukan score student
@@ -73,7 +76,7 @@
       return "invalid input";
     }
   }
-
+  console.log("SOAL NOMOR 3");
   console.log(scoreReport(90)); // A
   console.log(scoreReport(89)); // B
   console.log(scoreReport(75)); // C
@@ -81,13 +84,14 @@
   console.log(scoreReport(101)); // invalid input
   console.log(scoreReport(-1)); // invalid input
   console.log(scoreReport("sembilan puluh")); // invalid input
+  console.log("    ");
 
 /**
  * Menampilkan Bilangan Ganjil dari 1 sampai 20
  *
  * Buat program yang menampilkan semua bilangan ganjil dari 1 sampai 20 menggunakan for loop
  */
-
+  console.log("SOAL NOMOR 4");
   function loopCheckOddEven() {}
   function loopCheckOddEven(inputNumber) {
     if (typeof inputNumber === "number") {
@@ -128,16 +132,18 @@
       return "Invalid Input";
     }
   }
-
+  console.log("    ");
+  console.log("SOAL NOMOR 5");
   console.log(totalValue(100)); // 5050
   console.log(totalValue("empat")); // invalid input
+  console.log("    ");
 
 /**
  * Menghitung huruf vokal
  *
  * Buat program yang menerima sebuah string, lalu hitung berapa banyak huruf vokal (a, e, i, o, u) di dalam string tersebut. Gunakan function untuk mengembalikan value total jumlah huruf vocal
  */
-
+    console.log("SOAL NOMOR 6");
     function countVowels(str) {
     if (typeof str === "string") {
       const vowels = "aeiouAEIOU";
@@ -152,6 +158,10 @@
       return "invalid input";
     }
   }
+  console.log(countVowels("I Love JavaScript")); // 6
+  console.log(countVowels("mie ayam")); //4 
+  console.log("    ");
+
 /**
  * Cek karakter vokal atau konsonan
  *
@@ -177,10 +187,11 @@
       return "invalid input";
     }
   }
-
+  console.log("SOAL NOMOR 7");
   console.log(checkVowelConsonant("A")); // Output: "Vokal"
   console.log(checkVowelConsonant("b")); // Output: "Konsonan"
   console.log(checkVowelConsonant("a")); // Output: "Vokal"
+  console.log("    ");
 
 /**
  * Menentukan kelayakan Voting
@@ -201,10 +212,11 @@
       return "invalid input";
     }
   }
-
+  console.log("SOAL NOMOR 8");
   console.log(canVote(20)); // true
   console.log(canVote(17)); // false
   console.log(canVote("dua puluh")); // invalid input
+  console.log("    ");
 
 /**
  * Menentukan Hari dalam Seminggu
@@ -244,10 +256,11 @@
       return "Nomor hari tidak valid";
     }
   }
-
+  console.log("SOAL NOMOR 9");
   console.log(getDayName(1)); // Output: "Senin"
   console.log(getDayName(5)); // Output: "Jumat"
   console.log(getDayName(8)); // Output: "Nomor hari tidak valid"
+  console.log("    ");
 
 /**
  * Membalikkan Array
@@ -268,21 +281,23 @@
     }
     return reversed;
   }
-
+  console.log("SOAL NOMOR 10");
   console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
   console.log(reverseArray(["a", "b", "c"])); // Output: ['c', 'b', 'a']
+  console.log("    ");
 
 /**
  * Buat function untuk mengecek apakah input tersebut palindrome, return true jika palindrome, dan jika tidak palindrome maka return false
  *
  */
 
-const isPalindrome = (inputUser) => {
-  const cleanedInput = inputUser.replace(/\s+/g, "").toLowerCase();
-  const reversedInput = cleanedInput.split("").reverse().join("");
-  return cleanedInput === reversedInput;
-};
-
-console.log(isPalindrome("kasur rusak")); // true
-console.log(isPalindrome("kodok")); // true
-console.log(isPalindrome("makan malam")); // false
+  const isPalindrome = (inputUser) => {
+    const cleanedInput = inputUser.replace(/\s+/g, "").toLowerCase();
+    const reversedInput = cleanedInput.split("").reverse().join("");
+    return cleanedInput === reversedInput;
+  };
+  console.log("SOAL NOMOR 11");
+  console.log(isPalindrome("kasur rusak")); // true
+  console.log(isPalindrome("kodok")); // true
+  console.log(isPalindrome("makan malam")); // false
+  console.log("    ");
